@@ -63,16 +63,13 @@ function createRandomArray() {
     const rows = 15;
     const cols = 17;
     const array = [];
-  
-    // 빈 배열로 초기화
+    
     for (let i = 0; i < rows; i++) {
       array[i] = [];
       for (let j = 0; j < cols; j++) {
         array[i][j] = 0;
       }
     }
-  
-    // 요구 사항에 맞게 값 할당
     let count = 0;
     while (count < 3) {
       const row = Math.floor(Math.random() * rows);
@@ -82,7 +79,6 @@ function createRandomArray() {
         count++;
       }
     }
-  
     count = 0;
     while (count < 10) {
       const row = Math.floor(Math.random() * rows);
